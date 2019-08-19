@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>monoprintHL</title>
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <style>
+      h1 {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        color: #4d4d4d;
+      }
+
+      img {
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+      p {
+        padding: 5%;
+        font-family: "HelveticaNeueLTPro-BdCn", "HelveticaNeueW01-77BdCn_692722",
+          sans-serif;
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section active" id="section0">
+        <div class="relative">
+          <div class="absolute">
+            <center><img src="print1.jpg" width="45%" height="auto" /></center>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section1">
+        <center><img src="print2.jpg" width="35%" height="auto" /></center>
+      </div>
+      <div class="section" id="section2">
+        <center><img src="print3.jpg" width="35%" height="auto" /></center>
+      </div>
+      <div class="section" id="section3">
+        <center><img src="print4.jpg" width="35%" height="auto" /></center>
+      </div>
+      <div class="section" id="section4">
+        <center><img src="print5.jpg" width="35%" height="auto" /></center>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        sectionsColor: [
+          "whitesmoke",
+          "whitesmoke",
+          "whitesmoke",
+          "whitesmoke",
+          "whitesmoke"
+        ],
+        navigation: true,
+        navigationPosition: "left",
+        navigationTooltips: ["print1", "print2", "print3", "print4", "print5"]
+      });
+    </script>
+  </body>
+</html>
